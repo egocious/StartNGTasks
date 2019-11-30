@@ -1,0 +1,6 @@
+
+Name:  <?php echo $_POST["name"]; ?><br>
+Email address: <?php echo $_POST["email"]; ?><br>
+Title Topic: <?php echo $_POST["title"]; ?><br>
+Message/Comment: <?php echo $_POST["comment"]; ?>
+

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ego Ugwu Resume- Web Developer</title>
+    <meta name="title" content="Ego Ugwu Resume- Web Developer">
+    <meta name="description" content=" Ego Ugwu is a former banker. She obtained her MBA at the University of Lagos and her MSC in Human Resources at the University of Salford, UK. She has worked at Ecobank, Fidelity Bank and Lloyds Banking Group. Ego is now a  Javascript developer proficient in using HTML, CSS, Javascript and training on using NodeJS and ReactJS. She is currently based in Nigeria and is an intern at the HNG Internship Programme. #EgoUgwu #WebDevelopersinNigeria">
+    <meta name="keywords" content="Web developer, Front-end, Back-end, Full stark, Javascript, HTML, CSS, NodeJS, ReactJS, Web Developer in Nigeria, experience in banking, HNG Intership, StartNG, Hotels.ng, Mark Essien, ">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="copyright" content="Ego Ugwu's Resume">
+    <meta name="language" content="EN">
+    <meta name="author" content="Ego Ugwu">
+    <meta name="creationdate" content="September 07 2019">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="1 days">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Lora|Nanum+Gothic&display=swap" rel="stylesheet">
+    <style>        
+        
+    body  {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 120px;       
+        font-size: 15px;
+        margin: 0 auto;
+        width: 70%;
+        }   
+    
+    h1  {
+        font-size: 55px;
+        margin-bottom: 0px;
+        color: tomato; 
+        margin-top: 55px;      
+    }   
+   
+    .info-details {
+        padding-top: 44px;
+        padding-bottom: 75px;
+        margin-top: 22px;
+        text-align: center;        
+        padding-bottom: 75px; 
+        } 
+    .info-details h1{
+        font-family: 'Nanum Gothic', sans-serif;
+        
+         } 
+
+    .info-details hr{
+        width: 35%;
+        margin-bottom: 30px;
+        } 
+    #name, #email, #title {
+        padding: 10px;
+        width: 68%;
+        margin-top: 20px;
+        border: 1.5px solid grey;
+        }
+
+    #message  {
+        padding-bottom: 120px;
+        width: 70%;
+        margin-top: 10px;
+        border: 1.5px solid grey;
+    }
+      #button {
+        background-color: tomato;
+        border: none;
+        color: whitesmoke;
+        padding: 10px ;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 10px;
+        cursor: pointer;
+        width: 70%;
+        }
+
+        #button:hover  {
+            background-color: red;
+            color: whitesmoke;
+            font-weight: 500;
+            }
+         #button:active  {
+            top: 2px;
+            }
+            
+    </style>
+</head>
+<body>
+    
+    
+    <div class="info-details">        
+        <h1>QUICK CONTACT</h1>
+        <h3>Let's work together</p>
+        <hr>
+        <form action="message.txt"  method="POST" onsubmit="return validateForm()"  >                    
+                <input type="text" id="name" name="user_name" placeholder="NAME"  minlength="4"   required>
+                <br>  
+                
+                <input type="email" id="email" name="email-add" placeholder="EMAIL" required>
+                <br>   
+
+                <input type="text" id="title" name="title-text" placeholder="TITLE" required>
+                <br><br>                    
+                
+                <input type="text"  id="message"  name="comment"  placeholder="TYPE YOUR MESSAGE HERE...."  minlength= "20" required> 
+                <br><br>       
+                 
+                <input id="button" type="submit" value="SEND">
+        </form>            
+    </div> 
+
+    <script type="text/javascript">
+    function validateForm ()  {
+    let fullName = document.getElementById('name').value;
+    let emailAdd = document.getElementById('email').value;
+    let titleField = document.getElementById('title').value;
+    let msgField = document.getElementById('message').value;
+    if(fullName== "" || emailAdd == "" || titleField == "" || msgField == "")  {
+        alert ( "All fields required");
+        fullName.focus();
+        return false;
+    } else if(fullName.length < 4) {
+        alert (  "Name must have at least 4 characters");
+        emailAdd.focus();
+        return false;
+    } else if (emailAdd.indexOf("@", 0) < 0 || emailAdd.indexOf(".", 0) < 0 )  {
+        alert (  "Incorrect email address");
+        titleField.focus();
+        return false;
+    }else if (msgField.length <= 20) {
+        alert (  "Please enter at least 20 characters");
+        msgField.focus();
+        return false;
+        
+    }else {
+        return true;
+    }
+}
+</script>          
+   
+   
+</body>
+</html>
+
+

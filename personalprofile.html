@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Personal Profile | Ego ugwu</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
+    <style>
+        *  {
+            box-sizing: border-box;
+        }
+        body   {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+             margin: 0em 2em 0em 2em;
+             background-color: white;
+        }
+        /*
+        -----------------
+           Navbar
+        -----------------
+        */
+    #nav-bar   {
+        list-style: none;
+        background-color: antiquewhite;
+        opacity: 1;
+;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    
+    
+        margin-bottom: 0em;
+        margin-top: 0em;
+        height: 10vh;
+    }
+    li  {
+     
+     letter-spacing: 1px;       
+          
+    }
+    li  a{
+     color: tomato;
+     text-decoration: none;
+     font-weight: 500;
+          
+    }
+    li a:hover  {
+          background-color: white;
+          color: darkslategray;
+          border: 1px solid white;
+          border-radius: 1em;
+          padding: 2em;
+          font-weight: bold;
+    } 
+    a{
+     cursor: pointer;
+          
+    }
+     /*
+        -----------------
+          Social icons
+        -----------------
+        */ 
+    .images1   {
+           float: right;
+           padding-left: 25em;
+    }
+    .images2   {
+           float: right;
+           }
+     .images3   {
+            float: right;
+            margin-right: 2em;
+            }
+ /*
+        -----------------
+           Main
+        -----------------
+        */
+     
+     .pic   {
+     width: 100%;
+    background-size: auto;
+    margin-top: 0em;
+}
+    #welcome-section   {
+            position: absolute;
+            text-align: center;
+            width: 13.75em;
+            height: 1.5em;
+            top: 25em;
+            left: 25em;
+            color:black;
+            font-size: .93em;
+            font-family: 'Laila', serif;
+            font-weight: 500;
+            padding-top: 0em;
+  
+               }
+     h1   {
+        font-family: 'Montez', cursive;
+        padding: 0em;
+        margin:  0em;
+        font-size: 4.375em;
+        font-weight: bold;
+      }
+     .description   {
+         background-color: antiquewhite;
+         text-align: center;
+         margin-top: 0em;
+         padding-top: .31em;
+         line-height: 1.5em;
+       }
+     .heading   {
+        font-family: 'Sue Ellen Francisco',  cursive;
+        font-size: 2em;
+        padding-bottom: 0em;
+        color: tomato;
+      }
+  
+.author   {
+    position: absolute;
+    height: 5.625em;
+    width: 5em;
+    border-radius: 60%;
+    top: 56.25em;
+    left: 68.75em;
+
+}
+.project-tile {
+    color: tomato;
+    text-decoration: none;
+    cursor: pointer;
+}  
+
+/*
+        -----------------
+           Footer
+        -----------------
+        */
+        footer {    
+            color: tomato;
+}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <ul id="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li id="profile-link"><a href="resume.html">Resume</a></li>
+                <li id="projects" ><a href="https://codepen.io/egocious/pens/public">Projects</a></li>
+                <li><a href="contactMe.html">Contact</a></li>
+        <a href="https://twitter.com/egocious"><img src="https://res.cloudinary.com/partypack/image/upload/v1571950003/twitter-black-shape_1_cd5kqg.png" alt="twitter.logo" class="images1"/></a>
+        <a href="https://web.facebook.com/egocious.ugwu"><img src="https://res.cloudinary.com/partypack/image/upload/v1571949779/facebook_1_psirwh.png" alt="facebook.logo" class="images2"/></a>
+        <a href="https://www.linkedin.com/in/ego-ugwu-3a37b5a9/"><img src="https://res.cloudinary.com/partypack/image/upload/v1571950012/linkedin_1_h8osom.png" alt="linkedIn.logo" class="images3"/></a>
+         </ul>
+        </div>
+    </header>   
+
+    <main class="my-info">
+            <img  class="pic" src="https://res.cloudinary.com/partypack/image/upload/v1557165598/Minimalist-home-office-apr8-18_ixauc2.jpg"/>
+        <div id="welcome-section">
+          <h1>get noticed</h1>
+          <p class="notice">perfect from the begining to the end with exceptional value, I display with pride and make sure you feel the quality cause you are worth it.</p>
+       </div>
+       <div class="description">
+           <p class="heading">Seaching for a web developer? </p>
+           <p>Hi, my name is Ego Ugwu, I'm based in Lagos and I am a self taught web developer</p>
+           <p> and computer programmer. I make functioning web applications for small/big businesses.</P>
+            <p><a class="project-tile" href="https://codepen.io/egocious/pens/public">MyProjects</a></p>
+            <img class="author" src="https://res.cloudinary.com/partypack/image/upload/v1557261123/ego.jpg_u4gncn.jpg" alt="pic of author"/>
+       </div>
+    </main>
+    <footer>
+        <p>&copy ego ugwu</p>
+    </footer>
+    
+</body>
+</html>
